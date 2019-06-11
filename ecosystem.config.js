@@ -24,7 +24,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:peterchencc/gatsby-101.git',
       path : '/home/deploy/gatsby-101',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'npm install && npm run build && npm run serve'
     }
   }
 };
